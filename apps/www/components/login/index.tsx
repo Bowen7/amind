@@ -1,4 +1,4 @@
-import { Input } from "@/components/ui/input";
+import { Input } from "@amind/components/ui/input";
 export const Login = () => {
   return (
     <div>
