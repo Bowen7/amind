@@ -6,6 +6,7 @@
   "exports": {
     "./postcss.config": "./postcss.config.mjs",
     "./tailwind.config": "./tailwind.config.ts",
+    "./globals.css": "./src/globals.css",
     "./*": ["./src/*.ts", "./src/*.tsx"]
   },
   "scripts": {
