@@ -1,0 +1,4 @@
+[build]
+cmd = 'pnpm run build:web'
+[start]
+cmd = 'pnpm run start:web'

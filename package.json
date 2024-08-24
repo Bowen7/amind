@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@9.6.0",
   "scripts": {
-    "build": "pnpm -r build",
+    "build:web": "pnpm --filter @amind/www build",
     "start:web": "pnpm --filter @amind/www start"
   },
   "dependencies": {},
