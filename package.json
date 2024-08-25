@@ -5,7 +5,8 @@
   "packageManager": "pnpm@9.6.0",
   "scripts": {
     "build:web": "pnpm --filter @amind/www build",
-    "start:web": "pnpm --filter @amind/www start"
+    "start:web": "pnpm --filter @amind/www start",
+    "dev:web": "pnpm --filter @amind/www dev"
   },
   "dependencies": {},
   "devDependencies": {
