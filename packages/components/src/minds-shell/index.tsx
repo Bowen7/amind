@@ -2,15 +2,16 @@
 
 import { useCallback, useState } from 'react'
 import { COOKIE_NAMES } from '@amind/config'
+import type { PageRecordModel } from '@amind/types'
 import { Sidebar } from '#sidebar'
 import { Header } from '#header'
 
 type Props = {
-  children: React.ReactNode
   defaultSidebarCollapsed: boolean
+  pages: PageRecordModel[]
 }
 
-export const MainLayout = ({ children, defaultSidebarCollapsed }: Props) => {
+export const MindsShell = ({ defaultSidebarCollapsed }: Props) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(defaultSidebarCollapsed)
 
   const onSidebarToggle = useCallback(() => {
@@ -25,7 +26,9 @@ export const MainLayout = ({ children, defaultSidebarCollapsed }: Props) => {
       <Sidebar collapsed={sidebarCollapsed} />
       <div className="flex-1 flex flex-col">
         <Header onSidebarToggle={onSidebarToggle} />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <div>content</div>
+        </main>
       </div>
     </div>
   )

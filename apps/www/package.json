@@ -12,6 +12,7 @@
   "dependencies": {
     "@amind/components": "workspace:*",
     "@amind/config": "workspace:*",
+    "@amind/types": "workspace:*",
     "clsx": "^2.1.1",
     "next": "14.2.6",
     "pocketbase": "^0.21.4",
