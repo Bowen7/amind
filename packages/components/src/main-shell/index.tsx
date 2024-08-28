@@ -9,9 +9,10 @@ import { Header } from '#header'
 type Props = {
   defaultSidebarCollapsed: boolean
   pages: PageRecordModel[]
+  children: React.ReactNode
 }
 
-export const MindsShell = ({ defaultSidebarCollapsed }: Props) => {
+export const MainShell = ({ defaultSidebarCollapsed, pages, children }: Props) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(defaultSidebarCollapsed)
 
   const onSidebarToggle = useCallback(() => {
@@ -27,7 +28,7 @@ export const MindsShell = ({ defaultSidebarCollapsed }: Props) => {
       <div className="flex-1 flex flex-col">
         <Header onSidebarToggle={onSidebarToggle} />
         <main className="flex-1">
-          <div>content</div>
+          {children}
         </main>
       </div>
     </div>
